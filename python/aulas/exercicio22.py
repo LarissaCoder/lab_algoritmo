@@ -28,5 +28,7 @@ total_compra3 = compra3 - desconto_compra3
 
 # Retornei os descontos e o valor total
 print(f"A sua compra de R${compra1:.2f} terá um desconto de R${desconto_compra1:.2f} e o valor total de R${total_compra1:.2f}")
+
 print(f"A sua compra de R${compra2:.2f} terá um desconto de R${desconto_compra2:.2f} e o valor total de R${total_compra2:.2f}")
+
 print(f"A sua compra de R${compra3:.2f} terá um desconto de R${desconto_compra3:.2f} e o valor total de R${total_compra3:.2f}")
