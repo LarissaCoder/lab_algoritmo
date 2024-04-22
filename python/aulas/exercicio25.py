@@ -1,18 +1,35 @@
 import math
 
-#a-b) Latas de 18 litros e 3,6 litros
-area = float(input("Digite a área: "))
+'''Faça um Programa para uma loja de tintas. O programa deverá pedir
+o tamanho em metros quadrados da área a ser pintada. 
 
-coberturaLataG = 18 * 6
-coberturaLataP = 3.6 * 6
+Considere que a cobertura da tinta é de 1 litro para cada 6 metros 
+quadrados e que a tinta é vendida em latas de 18 litros, que 
+custam R$80,00 ou em galões de 3,6 litros, que custam R$ 35,00.
+Informe ao usuário as quantidades de tinta a serem compradas e os 
+respectivos preços em 3 situações:
 
-totalLataG = area / coberturaLataG
-totalLataP = area / coberturaLataP
+a)comprar apenas latas de 18 litros;
+b)comprar apenas galões de 3,6 litros;
+c)misturar latas e galões, de forma que o preço seja o menor. 
 
-print(f"{math.ceil(totalLataG)}")    
-print(f"{math.ceil(totalLataP)}")
+Acrescente 10% de folga e sempre arredonde os valores para cima, 
+isto é, considere latas cheias.'''
 
-#c) latas e galões, o menor preço
 
-totalComSobra = totalLataG + (totalLataG*10) / 100
-print(f"{totalComSobra}")
+area = float(input("Quantos metros quadrados tem a área a ser pintada?: "))
+litros = area / 6
+comprar =  litros + (litros*10) / 100
+
+lata = math.ceil(comprar / 18)
+galao = math.ceil(comprar / 3.6)
+
+lataValor = lata * 80
+galaoValor = galao * 35
+
+if lataValor > galao:
+    economia = galao
+
+else:
+    economia = lataValor
+    
