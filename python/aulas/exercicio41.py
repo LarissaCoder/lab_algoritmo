@@ -40,7 +40,7 @@ resultado_quadrado = func_quadrado(numero)
 if resultado_quadrado is None:
     print("Número inválido")
 else:
-    print(f"O número {numero:.0f} elevado ao quadrado é igual a {resultado_quadrado:.0f}.")
+    print(f"O número {numero} elevado ao quadrado é igual a {resultado_quadrado}.")
  
 def func_raiz(numero):
     if numero in [4,9]:
@@ -53,7 +53,7 @@ resultado_raiz = func_raiz(numero)
 if resultado_raiz is None:
     print("Número inválido")
 else:
-    print(f"A raiz do número {numero:.0f} é igual a {resultado_raiz:.0f}.")
+    print(f"A raiz do número {numero} é igual a {resultado_raiz}.")
  
 def func_divisao(numero):
     if numero in [6,7,8]:
@@ -66,4 +66,4 @@ resultado_divisao = func_divisao(numero)
 if resultado_divisao is None:
     print("Número inválido")
 else:
-    print(f"O número {numero:.0f} dividido por 9 é igual a {resultado_divisao:.2f}.")
+    print(f"O número {numero} dividido por 9 é igual a {resultado_divisao}.")
